@@ -190,6 +190,7 @@ self-care-ai-main/
     ├── sql_app.db
     ├── uploads/
     └── README.md
+    ---
 
 ---
 
