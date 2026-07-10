@@ -140,60 +140,76 @@ Users can register, upload retinal images, receive AI-powered disease prediction
 ---
 
 # 📂 Project Structure
-self-care-ai-main/
+
+```text
+SelfCareAI/
+│
 ├── README.md
 ├── index.html
 ├── package.json
 ├── pnpm-lock.yaml
-├── tailwind.config.js
+├── vite.config.ts
 ├── tsconfig.json
 ├── tsconfig.app.json
 ├── tsconfig.node.json
-├── vite.config.ts
+├── tailwind.config.js
+├── eslint.config.js
 ├── public/
+│
 ├── src/
 │   ├── App.tsx
 │   ├── main.tsx
 │   ├── index.css
 │   ├── App.css
+│   │
 │   ├── assets/
+│   │
 │   ├── components/
 │   │   ├── Auth/
+│   │   │   ├── AuthLayout.tsx
 │   │   │   ├── LoginPage.tsx
 │   │   │   ├── SignupPage.tsx
 │   │   │   └── ProtectedRoute.tsx
+│   │   │
 │   │   ├── Dashboard/
 │   │   │   └── DashboardPage.tsx
+│   │   │
 │   │   ├── Home/
+│   │   │   └── HomePage.tsx
+│   │   │
 │   │   └── MedicalLibrary/
-│   │       ├── ConditionCards.tsx
-│   │       ├── Hero.tsx
 │   │       ├── index.tsx
+│   │       ├── Hero.tsx
+│   │       ├── ConditionCards.tsx
+│   │       │
 │   │       ├── Conditions/
+│   │       │   ├── GlaucomaPage.tsx
 │   │       │   ├── CataractPage.tsx
-│   │       │   ├── DiabeticRetinopathyPage.tsx
-│   │       │   └── GlaucomaPage.tsx
+│   │       │   └── DiabeticRetinopathyPage.tsx
+│   │       │
 │   │       └── Prevention/
-│   │           ├── EyeExercisesPage.tsx
-│   │           └── EyeHealthPage.tsx
+│   │           ├── EyeHealthPage.tsx
+│   │           └── EyeExercisesPage.tsx
+│   │
 │   ├── lib/
 │   │   └── api.ts
+│   │
 │   └── utils/
 │       └── pdfGenerator.ts
-└── backend/
-    ├── app.py
-    ├── auth.py
-    ├── database.py
-    ├── models.py
-    ├── requirements.txt
-    ├── model.h5
-    ├── sql_app.db
-    ├── uploads/
-    └── README.md
-    ---
-
----
-
+│
+├── backend/
+│   ├── app.py
+│   ├── auth.py
+│   ├── database.py
+│   ├── models.py
+│   ├── requirements.txt
+│   ├── model.h5
+│   ├── sql_app.db
+│   ├── uploads/
+│   └── README.md
+│
+└── Eye_Diseases_Classification.ipynb
+```
 # 🔐 Authentication Flow
 
 ```text
