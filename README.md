@@ -351,19 +351,14 @@ http://localhost:5173
 
 # 👨‍💻 Author
 
-**Your Name**
+**Swapnil Sanjay Patil**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/swapnil3104
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: https://linkedin.com/in/swapnil-sanjay-patil3104
 
-Email: your@email.com
+Email: swapnilp3104@gmaiil.com
 
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
