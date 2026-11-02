@@ -12,14 +12,16 @@ logs
 *.log
 
 # Ignore Python artifacts from nested project
-self-care-ai-main/.venv/
-self-care-ai-main/__pycache__/
-self-care-ai-main/*.pyc
-self-care-ai-main/*.pyo
-self-care-ai-main/*.pyd
-self-care-ai-main/.Python
+.venv/
+venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.venv/
+**/.Python
 
 # Ignore node runtime files from nested project
-self-care-ai-main/node_modules/
-self-care-ai-main/dist/
-self-care-ai-main/dist-ssr/
+node_modules/
+dist/
+dist-ssr/

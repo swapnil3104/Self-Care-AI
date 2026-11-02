@@ -1,4 +1,5 @@
-import { ArrowRight, Search, BookOpen, Activity, ShieldCheck } from "lucide-react";
+import { ArrowRight, Search, BookOpen, Activity, ShieldCheck, Eye, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function MedicalHero() {
     return (
@@ -18,9 +19,18 @@ export function MedicalHero() {
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-8">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100/80 backdrop-blur-sm border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-widest shadow-sm">
-                        <BookOpen size={14} />
-                        <span>Trusted Resources</span>
+                    <div className="flex flex-wrap items-center gap-3">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100/80 backdrop-blur-sm border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-widest shadow-sm">
+                            <BookOpen size={14} />
+                            <span>Trusted Resources</span>
+                        </div>
+                        <Link 
+                            to="/eye-anatomy-3d"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 hover:bg-emerald-700 text-emerald-300 hover:text-white text-xs font-bold uppercase tracking-widest shadow-md transition-all hover:scale-105"
+                        >
+                            <Eye size={14} className="text-emerald-400" />
+                            <span>New: 3D Eye Anatomy</span>
+                        </Link>
                     </div>
 
                     <h1 className="text-6xl md:text-8xl font-serif font-black text-slate-900 tracking-tighter leading-[0.9]">
@@ -47,11 +57,21 @@ export function MedicalHero() {
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-4">
-                        <button className="bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-slate-900/20 hover:bg-emerald-600 hover:shadow-emerald-500/30 transition-all hover:-translate-y-1 flex items-center gap-2 group">
+                    <div className="flex flex-wrap items-center gap-4">
+                        <a 
+                            href="#eye-anatomy-section"
+                            className="bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-slate-900/20 hover:bg-emerald-600 hover:shadow-emerald-500/30 transition-all hover:-translate-y-1 flex items-center gap-2 group"
+                        >
                             Start Exploring
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </a>
+                        <Link 
+                            to="/eye-anatomy-3d"
+                            className="bg-emerald-600 text-white px-6 py-4 rounded-full font-bold text-base shadow-lg shadow-emerald-600/20 hover:bg-emerald-500 transition-all hover:-translate-y-1 flex items-center gap-2 group"
+                        >
+                            <Eye size={18} />
+                            <span>3D Eye Anatomy Lab</span>
+                        </Link>
                         <div className="relative group">
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                 <Search className="text-slate-400 group-focus-within:text-emerald-500 transition-colors" size={20} />
@@ -59,7 +79,7 @@ export function MedicalHero() {
                             <input
                                 type="text"
                                 placeholder="Search conditions..."
-                                className="pl-12 pr-6 py-4 rounded-full bg-white border border-slate-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all w-64"
+                                className="pl-12 pr-6 py-4 rounded-full bg-white border border-slate-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all w-60"
                             />
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 import { ArrowRight, Brain, CheckCircle2, Network } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const AboutAI = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -40,8 +42,11 @@ export const AboutAI = () => {
             </div>
           </div>
 
-          <button className="group flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-emerald-600 hover:shadow-lg hover:shadow-emerald-200">
-            <span>Know More</span>
+          <button 
+            onClick={() => navigate('/medical-library')}
+            className="group flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-emerald-600 hover:shadow-lg hover:shadow-emerald-200"
+          >
+            <span>Explore Clinical Library</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

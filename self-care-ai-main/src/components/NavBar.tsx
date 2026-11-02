@@ -30,6 +30,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Medical Library', path: '/medical-library' },
+    { name: '3D Eye Anatomy', path: '/eye-anatomy-3d' },
     { name: 'Dashboard', path: '/dashboard' },
   ];
 

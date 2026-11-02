@@ -153,3 +153,49 @@
     outline-offset: 0;
   }
 }
+
+/* New Modern Medical & AI Animations */
+@keyframes laserScan {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 95%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.animate-laser {
+  animation: laserScan 3s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.7);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}

@@ -1,4 +1,5 @@
 
+import Logo from "../Logo";
 import { ScanEye } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
@@ -19,18 +20,8 @@ export const AuthLayout = ({ children, title, subtitle }: AuthLayoutProps) => {
       </div>
 
       {/* Logo */}
-      <Link to="/" className="flex items-center gap-2 mb-8 relative z-10 group">
-        <div className="p-2 bg-emerald-500 rounded-xl text-white shadow-lg shadow-emerald-200 group-hover:scale-110 transition-transform">
-          <ScanEye size={28} />
-        </div>
-        <div className="flex flex-col">
-          <span className="text-2xl font-bold text-slate-900 tracking-tight">
-            SelfCare<span className="text-emerald-500">AI</span>
-          </span>
-          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-            AI-Powered Disease Detection
-          </span>
-        </div>
+      <Link to="/" className="inline-block mb-8 relative z-10 group">
+        <Logo height="h-14" />
       </Link>
 
       {/* Main Container */}
